@@ -9,7 +9,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Dosis&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" 
     integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/xilofostyle.css">
+ 
     <title>Music</title>
 </head>
 <body>
@@ -46,10 +47,12 @@
                 </ul>
                 <!--Esta es otra lista-->
                 <ul class="navbar_nav">
-                    <li class="nav-item">
+                    <li class="nav-item" id="video">
+
                         <a href="#" class="nav_link">
                             <img src="./img/youtube.png" width="50px">
-                            <span class="link_text"><h3>Video-Tutoriales</h3></span>
+                            <span class="link_text"><h3> Video Tutoriales</h3></span>
+
                         </a>
                     </li>
 
@@ -68,37 +71,35 @@
             <section id="board">
                 
                 <div id="content"><h1>Feel ta' beat<img src="./img/sound-waves.png" width="80px"></h1></div>
-                <div id="teclas">
-                    <ul class="set">
-                        <li class="white b"></li>
-                        <li class="black as"></li>
-                        <li class="white a"></li>
-                        <li class="black gs"></li>
-                        <li class="white g"></li>
-                        <li class="black fs"></li>
-                        <li class="white f"></li>
-                        <li class="white e"></li>
-                            <li class="black ds"></li>
-                            <li class="white d"></li>
-                            <li class="black cs"></li>
-                            <li class="white c"></li>
-                            <li class="white b"></li>
-                            <li class="black as"></li>
-                            <li class="white a"></li>
-                            <li class="black gs"></li>
-                            <li class="white g"></li>
-                            <li class="black fs"></li>
-                            <li class="white f"></li>
-                            <li class="white e"></li>
-                                <li class="black ds"></li>
-                                <li class="white d"></li>
-                                <li class="black cs"></li>
-                                <li class="white c"></li>    
-                      </ul>
+                   <!--video youtube como aprender tocar xilofono -->
+                   <div id="you_tube"> 
+                    <iframe src="https://www.youtube.com/embed/cGBVMCLxEtU">
+                    </iframe>
+                   </div>
+
+                <div class="cont-xilofon" id="xilofono"> 
+                   
+                    <div data-note ="C" class="key center tipografy">DO<BR><BR>d</div>
+                    <div data-note ="Db" class="key center tipografy">RE<BR><BR>r</div>
+                    <div data-note ="D" class="key center tipografy">MI<BR><BR> m</div>
+                    <div data-note ="E" class="key center tipografy">FA<BR><BR> f</div>
+                    <div data-note ="Eb" class="key center tipografy">SO<BR><BR>s</div>
+                    <div data-note ="F" class="key center tipografy">LA<BR><BR> l</div>
+                    <div data-note ="Gb" class="key center tipografy">SI<BR><BR> z</div>
+                    <div data-note ="G" class="key center tipografy">DO<BR><BR>d</div>
                 </div>
+                <audio id="C"  src="audio/C.mp3" class="sounds"></audio>
+                <audio id="Db" src="audio/D.mp3" class="sounds"></audio>
+                <audio id="D"  src="audio/E.mp3" class="sounds"></audio>
+                <audio id="E" src="audio/F.mp3" class="sounds"></audio>
+                <audio id="Eb"  src="audio/G.mp3" class="sounds"></audio>
+                <audio id="F" src="audio/A.mp3" class="sounds"></audio>
+                <audio id="Gb" src="audio/B.mp3" class="sounds"></audio>
+                <audio id="G"  src="audio/C2.mp3" class="sounds"></audio>
+               
             </section>
         </section>
     </main>
-    
+    <script type="text/javascript" src="js/xilofono.js"></script>
 </body>
 </html>

@@ -1,0 +1,270 @@
+
+/*Enlace tipografia*/
+@font-face{
+	font-family:"segoesc";
+	src: url("../fonts/segoesc.ttf") format("truetype");
+	font-style: normal;
+	font-weight: none;
+}
+
+:root {
+      font-family: 'dosis';
+    --transition-speed: 600ms; /*variable de transición*/
+  }
+/*Reseteo*/
+*{
+	margin:0;
+	border:0;
+	padding:0;
+	list-style:none;
+	box-sizing: border-box;
+}
+/*configuración de ancho y largo de pantalla*/
+html{
+    height: 100vh;
+    width: 100% !important; 
+    overflow-x: hidden !important;
+}
+/*Caja contenedora general*/
+#main_section{
+    display: flex;
+    background:radial-gradient(circle, rgb(0, 0, 0) 0%, rgba(103,61,77,1) 0%, rgb(0, 0, 0) 97%);
+    height: 100vh;
+    width: 100% !important; 
+ }
+ /* Barra de navegación cerrada*/
+nav{
+    background-color: rgba(0, 10, 9, 0.575);
+    display: flex;
+    flex-direction: column;  /*Direccion de los elementos en columna*/
+    justify-content: space-between; /*Da espacio entre los elementos que habitan la nav*/
+    height: 100vh;
+    position: fixed;/*Hace estatita la nav*/
+    z-index: 900;/*La eleva un nivel*/
+    width: 10%;
+    transition: width 400ms ease;
+    }
+/* Encabezados de lista*/
+.navbar_nav{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+/* Cada item de lista*/
+.nav-item{
+    width: 100%;
+    display: flex;
+}
+/* Cada enlace de lista*/
+.nav_link{
+    display: flex;
+    align-items: center;
+    height: 5rem;
+    transition: var(--transition-speed)
+}
+/* hover de cada item*/
+.nav-item:hover{
+    background-color: rgba(224, 13, 179, 0.986);
+    font-size: 1.1rem;
+ }
+/* iconos del nav*/
+.nav_link img{
+  margin: 0 1.5rem;
+}
+/* texto de cada item del nav*/
+.link_text{
+    display: none;
+    margin-left: 6rem;
+    overflow: hidden;
+    position: absolute;
+}
+/* Al pararse sobre el nav ocurre lo siguiente*/
+nav:hover{
+    width: 14rem;
+ }
+
+nav:hover .link_text{
+    display: block;
+    color: white;
+    transition: block 300ms ease;
+ }
+ .logo{
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  text-align: center;
+  color: var(--text-secondary);
+  background: var(--bg-secondary);
+  font-size: 1.5rem;
+  letter-spacing: 0.3ch;
+  width: 100%;
+  display: flex;
+ }
+.nav-logo{
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+.logo img{
+  transform: rotate(0deg);
+  transition: var(--transition-speed);
+  margin-left: 1rem;
+}
+ nav:hover .logo img{
+  transform: rotate(-540deg);
+}
+.logo_text{
+  display: none;
+  position: relative;
+ margin-left: 2rem;
+}
+nav:hover .logo_text{
+  display: block;
+  color: white;
+  transition: block 300ms ease;
+}
+/*titulo tabero principal*/
+
+h1{
+    font-family:"segoesc"; 
+    background: rgb(252, 0, 168);
+    font-size:2.5rem;
+    -webkit-text-fill-color:transparent;
+    -webkit-background-clip:text;
+    text-align: center;
+  }
+
+/*tablero principal*/
+#board{
+    background-color: rgba(56, 0, 68, 0);
+    position: fixed;
+    width: 110%;
+    height: 100vh;
+  }
+#content{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+#you_tube{
+    display:none;
+    justify-content:center;
+    margin-top:5%;
+    visibility:hidden;
+  }
+  
+  iframe {
+    width:560px;
+     height:315px;
+  }
+  
+  .cont-xilofon {
+    width:40%;
+    height:60%;
+    margin: 5% auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+  }
+  
+  .key{
+    width:10%;
+    height:98%;
+    border-radius:20px;
+    display:inline-block;
+    cursor:pointer;
+    background: linear-gradient(#05BAEF, #c1417b);
+  }
+  
+  .center{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+  }
+  .key:active{
+    background-color:gray;
+  }
+  
+  .tipografy{
+    font-family: sans-serif;
+    color:white;
+    font-weight: bold;
+    font-size: 1em;
+    user-select: none;
+  }
+  
+  .key:nth-child(1){
+   height:98%;
+  }
+  
+  .key:nth-child(2){
+    height:90%;
+   }
+  
+   .key:nth-child(3){
+    height:80%;
+   }
+   .key:nth-child(4){
+    height:70%;
+   }
+   .key:nth-child(5){
+    height:60%;
+   }
+   .key:nth-child(6){
+    height:50%;
+   }
+  
+   .key:nth-child(7){
+    height:40%;
+   
+   }
+   .key:nth-child(8){
+    height:30%;
+   }
+
+
+   /*RESPONSIVE DISPOSITIVOS MOVILES Pagina piano*/
+ @media only screen and (max-width: 769px) {
+    nav {
+      bottom: 0;
+      width: 100vw;
+      height: 5rem;
+      flex-direction: row;
+  
+    }
+  
+    .logo {
+      display: none;
+    }
+  
+    .navbar_nav {
+      flex-direction: row;
+      width: 50%;
+      justify-content: space-around;
+    }
+  
+    .nav_link {
+      justify-content: center;
+    }
+    nav:hover{
+      width:100%;
+    }
+    nav:hover .link_text{
+      display:none;
+    }
+  
+    main {
+      margin: 0;
+    }
+      
+      iframe { 
+        width:80%;
+      
+  
+      }
+  }
+  
+  

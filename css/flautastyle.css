@@ -1,0 +1,327 @@
+/*Enlace tipografia*/
+@font-face{
+	font-family:"segoesc";
+	src: url("../fonts/segoesc.ttf") format("truetype");
+	font-style: normal;
+	font-weight: none;
+}
+
+:root {
+      font-family: 'dosis';
+    --transition-speed: 600ms; /*variable de transición*/
+  }
+/*Reseteo*/
+*{
+	margin:0;
+	border:0;
+	padding:0;
+	list-style:none;
+	box-sizing: border-box;
+}
+/*configuración de ancho y largo de pantalla*/
+html{
+    height: 100vh;
+    width: 100% !important; 
+    overflow-x: hidden !important;
+}
+/*Caja contenedora general*/
+#main_section{
+    display: flex;
+    background:radial-gradient(circle, rgb(0, 0, 0) 0%, rgba(103,61,77,1) 0%, rgb(0, 0, 0) 97%);
+    height: 100vh;
+    width: 100% !important; 
+ }
+ /* Barra de navegación cerrada*/
+nav{
+    background-color: rgba(0, 10, 9, 0.575);
+    display: flex;
+    flex-direction: column;  /*Direccion de los elementos en columna*/
+    justify-content: space-between; /*Da espacio entre los elementos que habitan la nav*/
+    height: 100vh;
+    position: fixed;/*Hace estatita la nav*/
+    z-index: 900;/*La eleva un nivel*/
+    width: 10%;
+    transition: width 400ms ease;
+    }
+/* Encabezados de lista*/
+.navbar_nav{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+/* Cada item de lista*/
+.nav-item{
+    width: 100%;
+    display: flex;
+}
+/* Cada enlace de lista*/
+.nav_link{
+    display: flex;
+    align-items: center;
+    height: 5rem;
+    transition: var(--transition-speed)
+}
+/* hover de cada item*/
+.nav-item:hover{
+    background-color: rgba(224, 13, 179, 0.986);
+    font-size: 1.1rem;
+ }
+/* iconos del nav*/
+.nav_link img{
+  margin: 0 1.5rem;
+}
+/* texto de cada item del nav*/
+.link_text{
+    display: none;
+    margin-left: 6rem;
+    overflow: hidden;
+    position: absolute;
+}
+/* Al pararse sobre el nav ocurre lo siguiente*/
+nav:hover{
+    width: 14rem;
+ }
+
+nav:hover .link_text{
+    display: block;
+    color: white;
+    transition: block 300ms ease;
+ }
+ .logo{
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  text-align: center;
+  color: var(--text-secondary);
+  background: var(--bg-secondary);
+  font-size: 1.5rem;
+  letter-spacing: 0.3ch;
+  width: 100%;
+  display: flex;
+ }
+.nav-logo{
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+.logo img{
+  transform: rotate(0deg);
+  transition: var(--transition-speed);
+  margin-left: 1rem;
+}
+ nav:hover .logo img{
+  transform: rotate(-540deg);
+}
+.logo_text{
+  display: none;
+  position: relative;
+ margin-left: 2rem;
+}
+nav:hover .logo_text{
+  display: block;
+  color: white;
+  transition: block 300ms ease;
+}
+/*titulo tabero principal*/
+
+h1{
+    font-family:"segoesc"; 
+    background: rgb(252, 0, 168);
+    font-size:2.5rem;
+    -webkit-text-fill-color:transparent;
+    -webkit-background-clip:text;
+    text-align: center;
+  }
+
+/*tablero principal*/
+#board{
+    background-color: rgba(56, 0, 68, 0);
+    position: fixed;
+    width: 110%;
+    height: 100vh;
+  }
+#content{
+    display: flex;
+    justify-content: center;
+}
+
+
+#you_tube{
+    display:none;
+    justify-content:center;
+    margin-top:5%;
+    visibility:hidden;
+  }
+  
+  iframe {
+    width:560px;
+     height:315px;
+  }
+  :root {
+    --strip-color: #f58b00;
+    --flute-color: #d6db72;
+  }
+  /*flauta */
+  .flute {
+    height: 100px;
+    background-color: var(--flute-color);
+    width: 50%;
+    border-radius: 30px/80px;
+    display: flex;
+    align-items: center;
+    position: relative;
+
+  }
+  .flaute::after {
+    position: absolute;
+    right: 0;
+    border-radius: 30px/80px;
+    height: 92px;
+    width: 40px;
+    background-color: red;
+    content: "";
+    margin-left: 40px;
+    margin-right: 2px;
+   background: rgb(37,38,16);
+   background: linear-gradient(81deg, rgba(37,38,16,1) 0%, rgba(84,87,36,1) 100%);
+  }
+  .strip {
+    height: 100%;
+    width: 80px;
+    border-radius: 30px/80px;
+    background-color: black;
+    position: relative;
+    margin-right: 10px;
+    
+  }
+
+  .strip::after {
+    display: inline-block;
+    vertical-align: middle;
+    border-radius: 30px/80px;
+    height: 100px;
+    width: 50px;
+    background-color: red;
+    content: "";
+    margin-right: -15px;
+    float: right;
+    background-color: var(--flute-color);
+  
+  }
+  .strip.second {
+    background-color: var(--strip-color);
+
+  }
+  .strip.large {
+    width: 200px;
+  }
+
+  
+  .group {
+    display: flex;
+    align-items: center;
+  }
+    .group.first {
+        margin-left: 10px;
+      }
+      .group.second {
+        margin-left: auto;
+      }
+
+      .group.third {
+        margin-right: 5px;
+    
+      }
+      .group.thrid.hole{
+            margin-left: -30px;
+            margin-right: 10px;
+      }
+  
+    .group.strip + .strip {
+      margin-left: -30px;
+    }
+
+    .group.holes {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .group.hole { 
+    margin-left: -30px;
+    margin-right: 30px;
+    }
+
+  .group.hole:first-child(1) {
+    margin-left: -30px;
+    margin-right: 30px;
+  }
+  .group.hole:nth-child(2) {
+    margin-right: 30px;
+  }
+  .group.holes:nth-child(3) {
+    margin-right: 50px;
+  }
+  .group.holes:nth-child(4) {
+    margin-right: 20px;
+  }
+  .group.holes:nth-child(5) {
+    margin-right: 50px;
+  }
+  .group.holes:last-child {
+    margin-right: 20px;
+  }
+  
+  .hole {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: #22240f;
+    z-index: 10;
+    border-left: 2px solid #545724;
+    border-top: 2px solid #545724;
+  }
+
+
+   /*RESPONSIVE DISPOSITIVOS MOVILES Pagina piano*/
+ @media only screen and (max-width: 769px) {
+    nav {
+      bottom: 0;
+      width: 100vw;
+      height: 5rem;
+      flex-direction: row;
+  
+    }
+  
+    .logo {
+      display: none;
+    }
+  
+    .navbar_nav {
+      flex-direction: row;
+      width: 50%;
+      justify-content: space-around;
+    }
+  
+    .nav_link {
+      justify-content: center;
+    }
+    nav:hover{
+      width:100%;
+    }
+    nav:hover .link_text{
+      display:none;
+    }
+  
+    main {
+      margin: 0;
+    }
+      
+      iframe { 
+        width:80%;
+      
+  
+      }
+  }
+  
+  
