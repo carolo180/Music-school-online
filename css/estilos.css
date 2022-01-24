@@ -122,22 +122,23 @@
   display: block;
   color: white;
   transition: block 300ms ease;
-  }
-  
-  #you_tube{
+}
+
+#you_tube{
   display: none;
   justify-content: center;
   margin-top: 3%;
   transition: var(--transition-speed);
   visibility: hidden;
-  } 
-  iframe{
-    width: 560px;
-    height: 315px;
-    }
-    /*titulo tabero principal*/
-    
-    h1{
+}
+
+iframe{
+  width: 560px;
+  height: 315px;
+}
+/*titulo tabero principal*/
+
+h1{
     font-family:"segoesc"; 
     background: rgb(252, 0, 168);
     font-size:2.5rem;
@@ -156,60 +157,70 @@
     #content{
     display: flex;
     justify-content: center;
-    }
-    /*inicio*/
-    #instrumentos{
-    display: flex;
-    width: 90%;
-    height: 50%;
-    justify-content: space-between;
-    align-items: center;
-    }
-    .circle{
-    width: 27%;
-    height: 100%;
-    border-radius: 100%;
-    } 
-    /*Piano*/
-#teclas{
+}
+/*inicio*/
+#instrumentos{
   display: flex;
-  justify-content: center;
+  width: 90%;
+  height: 58%;
+  justify-content: space-between;
+  align-items: flex-end;
+ }
+.circle{
+  width: 25%;
+  height: 90%;
+  border-radius: 100%;
+  background-color: rgba(73, 63, 99, 96%);
+  border: 2px solid rgba(19, 219, 195, 74%);
+  display: flex;
+  position: relative;
+
+}
+.circle img{
+  position: absolute;
+}
+
+
+ /*Piano*/
+ #teclas{
+   display: flex;
+   justify-content: center;
   }
-  
-  .set {
-  height:50%;
-  width:49em;
-  margin: 6% 19em; 
-  padding:3em 0 0 3em;
-  position:relative;
-  border:1px solid #160801;
-  border-radius:1em;
-  display: flex;
-  background:rgba(255, 217, 248, 0.336);
-  box-shadow:0 0 50px rgba(0,0,0,0.5) inset,0 1px rgba(212,152,125,0.2) inset,0 5px 15px rgba(0,0,0,0.5)
+
+ .set {
+    height:50%;
+    width:49em;
+    margin: 6% 19em;  
+    padding:3em 0 0 3em;
+    position:relative;
+    border:1px solid #160801;
+    border-radius:1em;
+    display: flex;
+    background:rgba(255, 217, 248, 0.336);
+    box-shadow:0 0 50px rgba(0,0,0,0.5) inset,0 1px rgba(212,152,125,0.2) inset,0 5px 15px rgba(0,0,0,0.5)
   }
   
   .hide_note{
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
   }
+
   
-  
-  .set .white {
-  height:13em;
-  width:3em;
-  z-index:1;
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
-  position: relative;
-  border-left:1px solid #bbb;
-  border-bottom:1px solid #bbb;
-  border-radius:0 0 5px 5px;
-  box-shadow:-1px 0 0 rgba(255,255,255,0.8) inset,0 0 5px #ccc inset,0 0 3px rgba(0,0,0,0.2);
-  background:linear-gradient(to bottom,#eee 0%,#fff 100%)
+  .set  .white {
+    height:13em;
+    width:3em;
+    z-index:1;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    position: relative;
+    border-left:1px solid #bbb;
+    border-bottom:1px solid #bbb;
+    border-radius:0 0 5px 5px;
+    box-shadow:-1px 0 0 rgba(255,255,255,0.8) inset,0 0 5px #ccc inset,0 0 3px rgba(0,0,0,0.2);
+    background:linear-gradient(to bottom,#eee 0%,#fff 100%)
   }
   
   .set .white:active {
@@ -221,19 +232,19 @@
   }
   
   .black {
-  height:9em;
-  width:2em;
-  margin:0 0 0 3.5em;
-  z-index:2;
-  display: flex;
-  align-items: flex-end;
-  color: blanchedalmond;
-  justify-content: center;
-  position: absolute;
-  border:1px solid #000;
-  border-radius:0 0 3px 3px;
-  box-shadow:-1px -1px 2px rgba(255,255,255,0.2) inset,0 -5px 2px 3px rgba(0,0,0,0.6) inset,0 2px 4px rgba(0,0,0,0.5);
-  background:linear-gradient(45deg,#222 0%,#555 100%)
+    height:9em;
+    width:2em;
+    margin:0 0 0 3.5em;
+    z-index:2;
+    display: flex;
+    align-items: flex-end;
+    color: blanchedalmond;
+    justify-content: center;
+    position: absolute;
+    border:1px solid #000;
+    border-radius:0 0 3px 3px;
+    box-shadow:-1px -1px 2px rgba(255,255,255,0.2) inset,0 -5px 2px 3px rgba(0,0,0,0.6) inset,0 2px 4px rgba(0,0,0,0.5);
+    background:linear-gradient(45deg,#222 0%,#555 100%)
   }
   
   .black:active {
@@ -245,8 +256,42 @@
   left: 3%;
   }
   
+  .REb4 {
+    left: 3%;
+  }
+  
   .MIb4 {
-  left: 9%;
+    left: 9%;
+  }
+  
+  .SOLb4 {
+    left:22%;
+  }
+  
+  .LAb4 {
+    left: 28%;
+  }
+  
+  .SIb4 {
+    left: 34%;
+  }
+  
+  .REb5 {
+    left: 46%;
+  }
+  
+  .MIb5 {
+    left:53%;
+  }
+  .SOLb5{
+    margin-left: 23%;
+  }
+  .LAb5{
+    margin-left: 29%;
+
+  }
+  .SIb5{
+    margin-left: 35%;
   }
   
   .SOLb4 {
@@ -256,193 +301,309 @@
   .LAb4 {
   left: 28%;
   }
-  .SIb4 { 
-    left: 34%;
+  .second_piano{
+    display: flex;
+   
 }
 
 .REb5 {
 left: 46%;
 }
 
-.MIb5 {
-left:53%;
-}
-.SOLb5{
-margin-left: 23%;
-}
-.LAb5{
-margin-left: 29%;
-
-}
-.SIb5{
-margin-left: 35%;
-}
-
-.set ul li:first-child {
-border-radius:5px 0 5px 5px
-}
-
-.set ul li:last-child {
-border-radius:0 5px 5px 5px
-}
-.second_piano{
-display: flex;
-
-} 
-
-/*RESPONSIVE DISPOSITIVOS MOVILES Pagina piano*/
 
 
+  @media only screen and (max-width: 374px) {
 
-@media only screen and (max-width: 374px) {
-
-  .black {
-  height:8em;
-  width:11%;
-  }
-  .REb4 {
-  left: -7%;
-  }
-  
-  .MIb4 {
-  left: 7%;
-  }
-  
-  .SOLb4 {
-  left:30%;
-  }
-  
-  .LAb4 {
-  left: 44%;
-  }
-  
-  .SIb4 {
-  left: 59%;
-  }
-  .set {
-  height:28vh;
-  width:80%;
-  margin:50% 3em 10em 1em;
-  padding: 1em 1em 1em 1em;
-  }
-  .set .white {
-  height:12em;
-  width:17%;
-  }
-  iframe{
-  width: 90%;
-  }
-  } 
-  @media screen and (min-width: 375px) and (max-width: 700px) {
+    .black {
+      height:8em;
+      width:11%;
+    }
     .REb4 {
-    left: -4%;
+      left: -7%;
     }
     
     .MIb4 {
-    left: 10%;
+      left: 7%;
     }
     
     .SOLb4 {
-    left:36%;
+      left:30%;
     }
     
     .LAb4 {
-    left: 49%;
+      left: 44%;
     }
     
     .SIb4 {
-    left: 63%;
+      left: 59%;
     }
     .set {
-    height:29vh;
-    width:80%;
-    margin:40% 3em 10em 1em;
-    padding: 1em 1em 1em 1em;
+      height:28vh;
+      width:80%;
+      margin:50% 3em 10em 1em;
+      padding: 1em 1em 1em 1em;
     }
-    .set .white {
-    height:13em;
-    width:16%;
+  .set  .white {
+      height:12em;
+      width:17%;
     }
-    } 
-
-    @media screen and (min-width: 768px) and (max-width: 1000px) {
+    iframe{
+      width: 90%;
+    }
+    }
+    @media screen and (min-width: 375px) and (max-width: 700px) {
       .REb4 {
-      left: 7%;
+        left: -4%;
       }
       
       .MIb4 {
-      left: 20%;
+        left: 10%;
       }
       
       .SOLb4 {
-      left:44%;
+        left:36%;
       }
       
       .LAb4 {
-      left: 56%;
+        left: 49%;
       }
       
       .SIb4 {
-      left: 69%;
-      }
-      .black {
-      height:9em;
-      width:7%;
+        left: 63%;
       }
       .set {
-      height:40vh;
-      width:85%;
-      margin:8em 3em 3em -1em;
-      padding: -3em -3em 3em 3em;
+        height:29vh;
+        width:80%;
+        margin:40% 3em 10em 1em;
+        padding: 1em 1em 1em 1em;
+    }
+    .set  .white {
+        height:13em;
+        width:16%;
+    }
       }
-      .set .white {
-      height:14em;
-      width:13%;
-      }
-      } 
-
-      @media only screen and (max-width: 769px) {
-        nav {
-        bottom: 0;
-        width: 100vw;
-        height: 5rem;
-        flex-direction: row;
-        }
-        .logo {
-        display: none;
-        }
-        .navbar_nav {
-        flex-direction: row;
-        width: 50%;
-        justify-content: space-around;
-        }
-        .nav_link {
-        justify-content: center;
-        }
-        main {
-        margin: 0;
-        }
-        .second_piano{
-        display: none;
-        }
-        nav:hover{
-        width: 100%;
+      @media screen and (min-width: 768px) and (max-width: 1000px) {
+        .REb4 {
+          left: 7%;
         }
         
-        nav:hover .link_text{
-        display: none;
+        .MIb4 {
+          left: 20%;
         }
         
+        .SOLb4 {
+          left:44%;
+        }
         
+        .LAb4 {
+          left: 56%;
+        }
+        
+        .SIb4 {
+          left: 69%;
+        }
+        .black {
+          height:9em;
+          width:7%;
+        }
+        .set {
+          height:40vh;
+          width:85%;
+          margin:8em 3em 3em -1em;
+          padding: -3em -3em 3em 3em;
+        }
+        .set  .white {
+          height:14em;
+          width:13%;
+        }
+        } 
+      
+        @media only screen and (max-width: 769px) {
+          nav {
+            bottom: 0;
+            width: 100vw;
+            height: 5rem;
+            flex-direction: row;
+          }
+          .logo {
+            display: none;
+          }
+          .navbar_nav {
+            flex-direction: row;
+            width: 50%;
+            justify-content: space-around;
+          }
+          .nav_link {
+            justify-content: center;
+          }
+           main {
+            margin: 0;
+          }
+          .second_piano{
+              display: none;
+          }
+          nav:hover{
+            width: 100%;
+         }
+      
+          nav:hover .link_text{
+         display: none;
+          }
+       
+          
         }
         @media screen and (min-width: 1024px) and (max-width: 1200px) {
-        .set{
-        padding: 3em 3em 3em 3em;
-        }
-        }
-        
-        
-        /*fin pagina del piano*/ 
+          .set{
+            padding: 3em 3em 3em 3em;
+          }
+          }
 
 
-  
+
+/*inicio tercer instrumento*/
+
+
+.drum-box {
+	position: relative;
+	width: 45%;
+	margin: 2% auto 0;
+  box-shadow: rgba(255, 255, 255, 0.89) 0px 50px 100px -20px,
+    rgb(255, 255, 255) 0px -2px 6px 0px inset;
+ }
+
+.drum-kit {
+	width: 100%;
+	height: 520px;
+	position: relative;
+}
+
+.crash-cymbal {
+	position: absolute;
+	top: 114px;
+    left: 80px;
+    transform: rotate(-7.2deg) scale(1.5);
+    transition: all ease-in-out .042s;
+}
+
+.hihat-top-cymbal {
+	position: absolute;
+    top: 166px;
+    right: 71px;
+    transform: scale(1.35);
+    z-index: 0;
+    transition: all ease-in-out .042s;
+}
+
+.key {
+   display: flex;
+	transition: all ease-in-out .042s;
+	position: absolute;
+	background: #eaeaea;
+    font-size: 1.5em;
+    height: 25px;
+    width: 25px;
+    text-align: center;
+    border-radius: 100%;
+    border: 3px solid #aaa;
+    color: #444;
+    box-shadow: 1px 1px 1px rgba(0,0,0,.65);
+    z-index: 2;
+}
+
+.key.kick {
+	top: 410px;
+    right: 250px;
+}
+
+.key.kick2 {
+    top: 410px;
+    right: 320px;
+}
+
+.key.snare {
+	right: 145px;
+    top: 280px;
+}
+
+.key.tom-high {
+	right: 227px;
+    top: 240px;
+}
+
+.key.tom-mid {
+	left: 222px;
+    top: 220px;
+}
+
+.key.tom-low {
+	top: 320px;
+    left: 133px;
+}
+
+.key.crash {
+	top: 80px;
+    left: 75px;
+}
+
+.key.ride {
+	left: 165px;
+    top: 87px;
+}
+
+.key.hihat-open {
+	right: 165px;
+    top: 144px;
+}
+
+.key.hihat-close {
+	right: 60px;
+    top: 150px;
+}
+
+.playing {
+	transform: scale(1.12);
+}
+
+.key-map-wrapper {
+	position: absolute;
+    right: 0;
+    top: 0;
+    height: 700px;
+    background: #111;
+    width: 250px;
+    z-index: 3;
+}
+
+.key-map-wrapper > h2 {
+	color: #fff;
+	font-family: 'Handlee', cursive;
+	margin-bottom: 35px;
+	border-bottom: 1px solid #fff;
+    padding-bottom: 20px;
+}
+
+.key-map-list {
+	list-style: none;
+	color: #fff;
+	text-align: left;
+}
+
+.key-map-list > li {
+	margin-bottom: 25px;
+}
+
+.key-code {
+	color: #444;
+    background-color: #eaeaea;
+    font-size: 1.25em;
+    padding: 5px 10px;
+    border-radius: 4px;
+    border: 3px solid #aaa;
+}
+
+.key-sound {
+	font-size: 1.2em;
+	margin-left: 10px;
+	font-family: 'Handlee', cursive;
+	vertical-align: middle;
+}

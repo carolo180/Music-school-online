@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" 
+    integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Music</title>
+</head>
+<body>
+    <main>
+        <section id="main_section">
+            <nav>
+            
+            <!--Esta es otra lista-->
+                         
+                <ul class="navbar_nav">
+                    <li class="logo">
+                        <a href="#" class="nav-logo">
+                            <span class="logo_text" >Try on</span>
+                            <img src="./img/sound-waves.png" width="80px">
+                        </a>
+
+
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#" class="nav_link">
+                            <img src="./img/piano.png" width="50px">
+                            <span class="link_text"><h3>Play Piano</h3></span>
+                       </a>
+                    </li>
+                        
+                    <li class="nav-item">
+                        <a href="#" class="nav_link">
+                            <img src="./img/flauta.png" width="60px">
+                            <span class="link_text"><h3> Play Flauta</h3></span>
+                        </a>
+                    </li>
+                   
+                </ul>
+                <!--Esta es otra lista-->
+                <ul class="navbar_nav">
+                    <li class="nav-item">
+                        <a href="#" class="nav_link">
+                            <img src="./img/youtube.png" width="50px">
+                            <span class="link_text"><h3>Video-Tutoriales</h3></span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#" class="nav_link">
+                            <img src="./img/document.png" width="50px">
+                            <span class="link_text">Recursos</span>
+                        </a>
+                    </li>
+                    <li class="nav-item"></li>
+                </ul>
+
+            </nav>
+        </ul>
+        <!--Tablero principal donde estan ubicados los instrumentos-->
+            <section id="board">
+                
+              
+             
+                 <!--Bateria-->
+               
+
+                 
+                  <div class="drum-box">
+                        <img id="crash-ride" class="crash-cymbal" src="img/crash.png" alt="Crash cymbal">
+                        <img id="hihat-top" class="hihat-top-cymbal" src="img/hihat-top.png" alt="Hi Hat cymbal">
+                        <div data-key="74" class="key snare">
+                        <kbd>J</kbd>
+                        </div>
+                        <div data-key="66" class="key kick">
+                        <kbd>B</kbd>
+                        </div>
+                        <div data-key="86" class="key kick2">
+                        <kbd>V</kbd>
+                        </div>
+                        <div data-key="72" class="key tom-high">
+                        <kbd>H</kbd>
+                        </div>
+                        <div data-key="71" class="key tom-mid">
+                        <kbd>G</kbd>
+                        </div>
+                        <div data-key="70" class="key tom-low">
+                        <kbd>F</kbd>
+                        </div>
+                        <div data-key="69" class="key crash">
+                        <kbd>E</kbd>
+                        </div>
+                        <div data-key="82" class="key ride">
+                        <kbd>R</kbd>
+                        </div>
+                        <div data-key="73" class="key hihat-open">
+                        <kbd>I</kbd>
+                        </div>
+                        <div data-key="75" class="key hihat-close">
+                        <kbd>K</kbd>
+                        </div>
+                          <img class="drum-kit" src="img/drum-kit.png" alt="Drum Kit" />
+                  </div>
+            </section>
+        </section>
+    </main>
+   
+    <audio data-key="74" src="sounds/snare.wav"></audio>
+    <audio data-key="66" src="sounds/kick.wav"></audio>
+    <audio data-key="86" src="sounds/2_kick.wav"></audio>
+    <audio data-key="72" src="sounds/tom-high.wav"></audio>
+    <audio data-key="71" src="sounds/tom-mid.wav"></audio>
+    <audio data-key="70" src="sounds/tom-low.wav"></audio>
+    <audio data-key="69" src="sounds/crash.wav"></audio>
+    <audio data-key="82" src="sounds/ride.wav"></audio>
+    <audio data-key="73" src="sounds/hihat-open.wav"></audio>
+    <audio data-key="75" src="sounds/hihat-close.wav"></audio>
+
+  <script src="js/drum.js"></script>
+</body>
+</html>
