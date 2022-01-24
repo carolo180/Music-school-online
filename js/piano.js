@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 /* Primera manera dejando el html limpio y creando objetos */
 
 /*
@@ -158,7 +156,6 @@ const teclas=[
   });
   */
 
->>>>>>> ef47fa7f8d8c94a60c8811bb7e927326436c13bd
 const teclas = document.querySelectorAll('.tecla')
 
 
@@ -196,11 +193,7 @@ document.addEventListener('keydown', e => {
    if (blackKeyIndex > -1) playNote(blackKeys[blackKeyIndex])
  })
 
-<<<<<<< HEAD
-
-=======
 /*Evento que reproduce el tutorial de youtube*/
->>>>>>> ef47fa7f8d8c94a60c8811bb7e927326436c13bd
  const videos = document.getElementById("video")
  const video = document.getElementById("you_tube")
  const piano = document.getElementById("teclas")
@@ -211,9 +204,6 @@ document.addEventListener('keydown', e => {
  piano.style.display="none"
  video.style.display="flex"
  video.style.visibility="visible"
-<<<<<<< HEAD
-})
-=======
 })
  
  
@@ -230,4 +220,3 @@ document.addEventListener('keydown', e => {
     
     
     
->>>>>>> ef47fa7f8d8c94a60c8811bb7e927326436c13bd
