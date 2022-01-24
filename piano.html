@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" 
+    integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/estilos.css">
+    <title>Music</title>
+</head>
+<body>
+    <main>
+        <section id="main_section">
+            <nav>
+            
+            <!--Esta es otra lista-->
+                         
+                <ul class="navbar_nav">
+                    <li class="logo">
+                        <a href="#" class="nav-logo">
+                            <span class="logo_text" >Try on</span>
+                            <img src="./img/sound-waves.png" width="80px">
+                        </a>
+
+
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="piano.html" class="nav_link">
+                            <img src="./img/piano.png" width="50px">
+                            <span class="link_text"><h3>Play Piano</h3></span>
+                       </a>
+                    </li>
+                        
+                    <li class="nav-item">
+                        <a href="#" class="nav_link">
+                            <img src="./img/flauta.png" width="60px">
+                            <span class="link_text"><h3> Play Flauta</h3></span>
+                        </a>
+                    </li>
+                   
+                </ul>
+                <!--Esta es otra lista-->
+                <ul class="navbar_nav">
+                    <li class="nav-item" id="video">
+                        <a href="#" class="nav_link">
+                            <img src="./img/youtube.png" width="50px">
+                            <span class="link_text"><h3>Video-Tutoriales</h3></span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="./pdfs/Piano_-_cuadernillo_curso_basico.pdf" download="Reporte2Mayo2010" class="nav_link">
+                            <img src="./img/document.png" width="50px">
+                            <span class="link_text"><h3>Download Pdf</h3></span>
+                        </a>
+                    </li>
+                    <li class="nav-item"></li>
+                </ul>
+
+            </nav>
+       
+        <!--Tablero principal dinde estan ubicados los instrumentos-->
+            <section id="board">
+                
+                <div id="content"><h1>Feel ta' beat<img src="./img/sound-waves.png" width="80px"></h1></div>
+                <div id="you_tube">
+                    <iframe src="https://www.youtube.com/embed/kAALQ4JEY6c">
+                    </iframe>
+                 </div>
+                <div id="teclas">
+                   
+                    <ul class="set">
+                            <li data-note="C" class="tecla white DO4"><span class="hide_note"><h4>DO</h4>q</span></li>
+                            <li data-note="Db"class="tecla black REb4"><span class="hide_note"><h5>DO#</h5>g</span></li>
+                            <li data-note="D" class="tecla white RE4"><span class="hide_note"><h4>RE</h4>w</span></li>
+                            <li data-note="Eb"class="tecla black MIb4"><span class="hide_note"><h5>RE#</h5>h</span></li>
+                            <li data-note="E" class="tecla white MI4"><span class="hide_note"><h4>MI</h4>e</span></li>
+                                                       
+                                <li data-note="F" class="tecla white FA4"><span class="hide_note"><h4>FA</h4>r</span></li>
+                                <li data-note="Gb"class="tecla black SOLb4"><span class="hide_note"><h5>FA#</h5>j</span></li>
+                                <li data-note="G" class="tecla white SOL4"><span class="hide_note"><h4>SOL</h4>t</span></li>
+                                <li data-note="Ab"class="tecla black LAb4"><span class="hide_note"><h5>SOL#</h5>k</span></li>
+                                <li data-note="A" class="tecla white LA4"><span class="hide_note"><h4>LA</h4>y</span></li>
+                                <li data-note="Bb"class="tecla black SIb4"><span class="hide_note"><h5>LA#</h5>l</span></li>
+                                <li data-note="B" class="tecla white SI4"><span class="hide_note"><h4>SI</h4>u</span></li>
+
+                                <span class="second_piano">
+                                    <li data-note="Cb" class="tecla white DO5"><span class="hide_note"><h4>DO</h4>i</span></li>
+                                    <li data-note="Db5"class="tecla black REb5"><span class="hide_note"><h5>DO#</h5>ñ</span></li>
+                                    <li data-note="D5" class="tecla white RE5"><span class="hide_note"><h4>RE</h4>o</span></li>
+                                    <li data-note="Eb5"class="tecla black MIb5"><span class="hide_note"><h5>RE#</h5>z</span></li>
+                                    <li data-note="Fb" class="tecla white MI5"><span class="hide_note"><h4>MI</h4>p</span></li>
+                                    <li data-note="f4" class="tecla white FA4"><span class="hide_note"><h4>FA</h4>a</span></li>
+                                    <li data-note="f4b" class="tecla black SOLb5"><span class="hide_note"><h5>FA#</h5>x</span></li>
+                                    <li data-note="g4" class="tecla white SOL4"><span class="hide_note"><h4>SOL</h4>s</span></li>
+                                    <li data-note="a4" class="tecla black LAb5"><span class="hide_note"><h5>SOL#</h5>c</span></li>
+                                    <li data-note="a4b" class="tecla white LA4"><span class="hide_note"><h4>LA</h4>d</span></li>
+                                    <li data-note="b5" class="tecla black SIb5"><span class="hide_note"><h5>LA#</h5>v</span></li>
+                                    <li data-note="b5b" class="tecla white SI4"><span class="hide_note"><h4>SI</h4>f</span></li>   
+                                   
+                                </span>
+                                
+                            
+                      </ul>
+                </div>
+
+                <audio id="C" src="sounds/c3.mp3"></audio>
+                <audio id="Db" src="sounds/Db3.mp3"></audio>
+                <audio id="D" src="sounds/d3.mp3"></audio>
+                <audio id="Eb" src="sounds/Eb3.mp3"></audio>
+                <audio id="E" src="sounds/e3.mp3"></audio>
+                <audio id="F" src="sounds/f3.mp3"></audio>
+                <audio id="Gb" src="sounds/Gb3.mp3"></audio>
+                <audio id="G" src="sounds/g3.mp3"></audio>
+                <audio id="Ab" src="sounds/Ab3.mp3"></audio>
+                <audio id="A" src="sounds/a3.mp3"></audio>
+                <audio id="Bb" src="sounds/Bb3.mp3"></audio>
+                <audio id="B" src="sounds/b3.mp3"></audio>
+                <audio id="Cb" src="sounds/c4.mp3"></audio>
+                <audio id="Db5" src="sounds/REb4.mp3"></audio>
+                <audio id="D5" src="sounds/D4.mp3"></audio>
+                <audio id="Eb5" src="sounds/MIb4.mp3"></audio>
+                <audio id="Fb" src="sounds/E4.mp3"></audio>
+                <audio id="f4" src="sounds/F4.mp3"></audio>
+                <audio id="f4b" src="sounds/SOLb4.mp3"></audio>
+                <audio id="g4" src="sounds/G4.mp3"></audio>
+                <audio id="a4" src="sounds/LAb4.mp3"></audio>
+                <audio id="a4b" src="sounds/A4.mp3"></audio>
+                <audio id="b5" src="sounds/SIb4.mp3"></audio>
+                <audio id="b5b" src="sounds/B4.mp3"></audio>
+            </section>
+        </section>
+    </main>
+   
+    <script type="text/javascript" src="js/piano.js"></script>
+</body>
+</html>
