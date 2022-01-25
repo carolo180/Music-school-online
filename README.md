@@ -19,7 +19,8 @@ En los instrumentos se pueden tocar con el teclado y mause.
 
 <h2> INSTRUMENTOS <h2>
 
-<img src="./img-readme/piano.png" width="50%"> <img src="./img-readme/xilofono.png" width="50%">
-<img src="./img-readme/bateria.png" width="100%">
+<img src="./img-readme/piano.png" width="80%"> 
+<img src="./img-readme/xilofono.png" width="80%">
+<img src="./img-readme/bateria.png" width="80%">
 
 
