@@ -1,12 +1,12 @@
 
-const XILOFONO_KEYS = ['d','r','m','f','s','l','z','d']
+const XILOFONO_KEYS = ['s','d','f','g','h','j','k','l']
 
 const keys = document.querySelectorAll('.key')
 const xilofonokeys = document.querySelectorAll('.key')
 
-keys.forEach(Key => { 
+/*keys.forEach(Key => { 
   Key.addEventListener('mousemove', () => playNote(Key))
-})
+})*/
 
 keys.forEach(Key => { 
     Key.addEventListener('click', () => playNote(Key))

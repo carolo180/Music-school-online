@@ -31,31 +31,40 @@
                     </li>
 
                     <li class="nav-item">
-                        <a href="#" class="nav_link">
-                            <img src="./img/piano.png" width="50px">
+                        <a href="piano.html" class="nav_link">
+                            <img src="./img/piano.png" width="55px">
                             <span class="link_text"><h3>Play Piano</h3></span>
                        </a>
                     </li>
-                        
+
                     <li class="nav-item">
-                        <a href="#" class="nav_link">
-                            <img src="./img/flauta.png" width="60px">
-                            <span class="link_text"><h3> Play Flauta</h3></span>
+                        <a href="xilofono.html" class="nav_link">
+                            <img src="./img/xilofono (1).png" width="65px">
+                            <span class="link_text"><h3>Play Xilofon</h3></span>
+                       </a>
+                    </li>
+                   
+                    <li class="nav-item">
+                        <a href="drums.html" class="nav_link">
+                            <img src="./img/drums.png" width="55px">
+                            <span class="link_text"><h3> Play Drums</h3></span>
                         </a>
                     </li>
                    
                 </ul>
                 <!--Esta es otra lista-->
                 <ul class="navbar_nav">
-                    <li class="nav-item">
+                    <li class="nav-item" id="video">
 
-                        <a href="https://www.youtube.com/watch?v=dBVAa_k0tlA" class="nav_link">
+                        <a href="#" class="nav_link">
                             <img src="./img/youtube.png" width="50px">
+                            <span class="link_text"><h3> Video Tutoriales</h3></span>
+
                         </a>
                     </li>
 
                     <li class="nav-item">
-                        <a href="#" class="nav_link">
+                        <a href="./pdfs/tocando-flauta.pdf" class="nav_link">
                             <img src="./img/document.png" width="50px">
                             <span class="link_text">Recursos</span>
                         </a>
@@ -69,43 +78,42 @@
             <section id="board">
                 
                 <div id="content"><h1>Feel ta' beat<img src="./img/sound-waves.png" width="80px"></h1></div>
+                <div id="you_tube"> 
+                    <iframe src="https://www.youtube.com/embed/mAyz-pCPxaU">
+                    </iframe>
+                </div>
+
+                <div class="cont-flute" id="flute">
+                    <div class="flute"> 
+                        <div class="square"></div>
+                        <span>Do</span>
+                        <div data-note ="C" class="hole"></div>
+                        <div class="strip"></div>
+                        <span>RE</span>
+                        <div data-note ="Db" class="hole"></div>
+                        <span>MI</span>
+                        <div  data-note ="D" class="hole"></div>
+                        <div class="strip"></div>
+                        <span>FA</span>
+                        <div data-note ="E" class="hole"></div>
+                        <span>SO</span>
+                        <div data-note ="Eb" class="hole"></div>
+                        <div class="strip"></div>
+                        <span>LA</span>
+                        <div data-note ="F" class="hole"></div>
+                    </div>
+                </div>
+                <audio id="C"  src="audio/flute-C4.wav"class="sounds"></audio>
+                <audio id="Db" src="audio/flute-G4.wav"class="sounds"></audio>
+                <audio id="D"  src="audio/flute-C5.wav"class="sounds"></audio>
+                <audio id="E" src="audio/flute-G5.wav" class="sounds"></audio>
+                <audio id="Eb" src="audio/flute-C6.wav"class="sounds"></audio>
+                <audio id="F" src="audio/flute-G6.wav"class="sounds"></audio>
                
-                <div class="flute">
-                    <div class="group first">
-                      <div class="strip first"></div>
-                      <div class="strip second"></div>
-                      <div class="hole first"></div>
-                    </div>
-                  
-                    <div class="group second">
-                      <div class="strip first"></div>
-                      <div class="strip first"></div>
-                      <div class="strip second large"></div>
-                      <div class="strip first"></div>
-                      <div class="strip first"></div>
-                      <div class="holes">
-                        <div class="hole first"></div>
-                        <div class="hole first"></div>
-                        <div class="hole first"></div>
-                        <div class="hole first"></div>
-                        <div class="hole first"></div>
-                        <div class="hole first"></div>
-                      </div>
-                    </div>
-                    <div class="group third">
-                  
-                      <div class="strip first"></div>
-                      <div class="hole first"></div>
-                      <div class="strip second"></div>
-                      <div class="strip first"></div>
-                  
-                    </div>
-                  
-                  </div>
                
             </section>
         </section>
     </main>
-    <script type="text/javascript" src="js/index.js"></script>
+    <script type="text/javascript" src="js/flauta.js"></script>
 </body>
 </html>

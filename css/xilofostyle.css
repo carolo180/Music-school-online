@@ -185,7 +185,7 @@ h1{
     justify-content:center;
   }
   .key:active{
-    background-color:gray;
+    background:gray;
   }
   
   .tipografy{
