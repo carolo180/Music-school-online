@@ -62,13 +62,13 @@
   /*Efecto hover iconos de inicio*/
 
   .main_box:hover .int_icon{
-     width: 110%;
+     width: 123%;
      transition: var(--transition-speed);
 
   }
 
   .main_box:hover .box{
-    width: 130%;
+    width: 140%;
     transition: var(--transition-speed);
   }
 
@@ -87,7 +87,7 @@
 
    .circle{
     width: 60%;
-    height: 70%;
+    height: 60%;
     border-radius: 100%;
     background-color: rgba(73, 63, 99, 96%);
     border: 2px solid rgba(19, 219, 195, 74%);
@@ -184,15 +184,16 @@
 
   .logo{
   font-weight: bold;
-  text-transform: uppercase;
   margin-bottom: 1rem;
-  text-align: center;
   color: var(--text-secondary);
   background: var(--bg-secondary);
   font-size: 1.5rem;
-  letter-spacing: 0.3ch;
+  letter-spacing: 0.2ch;
   width: 100%;
   display: flex;
+  }
+  .logo:hover{
+    text-shadow: 0 0 10px #ffffff, 0 0 35px #ffffff, 0 0 60px #de4be0, 0 0 210px #de4be0; ;
   }
 
   .nav-logo{
@@ -216,6 +217,7 @@
   .logo_text{
   display: none;
   position: fixed;
+  left: 1%;
   }
    
   nav:hover .logo_text{
@@ -599,7 +601,7 @@ left: 46%;
       width: 90%;
       height: 60%;
       flex-direction: column;
-      margin-top: 75%;
+      margin-top: 150%;
     }
      /*iconos de inicio*/
   
@@ -629,11 +631,14 @@ left: 46%;
       width: 100%;
       height: auto;
     }
+    .square {
+       height: 25px;
+       width: 40px;
+     }
     .square.kick {
       top: 230px;
        right: 150px;
     }
-         
     .square.snare {
       right: 70px;
         top: 150px;
@@ -722,18 +727,21 @@ left: 46%;
       width: 90%;
       height: 60%;
       flex-direction: column;
-      margin-top: 50%;
+      margin-top: 90%;
     }
      /*iconos de inicio*/
   
     .main_box{
        width: 100%;
        height: 30vh;
-       margin-top: 20%;
+       margin-top: 30%;
     }
+    .main_box .box{
+      width: 110%;
+      }
     .circle{
       width: 60%;
-      height: 100%;
+      height: 110%;
     }
     .circle img{
       position: relative;
@@ -745,75 +753,72 @@ left: 46%;
       display: flex;
       padding-top: 20px;
     }
+ 
     .drum-box {
       width: 100%;
-     margin-top: 25%;
+     margin-top: 30%;
      }
     .drum-kit {
       width: 100%;
       height: auto;
     }
-    .drum-box {
-      width: 100%;
-     margin-top: 45%;
-     }
-    .drum-kit {
-      width: 100%;
-      height: auto;
+    .square {
+      height: 25px;
+      width: 40px;
     }
     .square.kick {
-      top: 230px;
-       right: 150px;
+      top: 80%;
+       right: 45%;
     }
-         
     .square.snare {
-      right: 70px;
-        top: 150px;
+      right: 23%;
+        top: 52%;
      }
     
     .square.tom-high {
-      right: 125px;
-        top: 140px;
+      right: 37%;
+        top: 45%;
     }
     
     .square.tom-mid {
-      left:110px;
-        top: 130px;
+      left:35%;
+      top: 43%;
       }
     
     .square.tom-low {
-      top: 200px;
-        left: 55px;
+      top: 65%;
+      left: 20%;
      }
     
     .square.crash {
-      top: 50px;
-        left: 20px;
+      top: 15%;
+      left: 10%;
     }
     
     .square.ride {
-      left: 90px;
-        top: 50px;
-     }
+      left: 28%;
+      top: 15%;
+    }
     
     .square.hihat-open {
-      right: 95px;
-        top: 60px;
+      right: 30%;
+      top: 20%;
     }
     
     .square.hihat-close {
-      right: 30px;
-        top: 60px;
-     }
+      right: 10%;
+        top: 20%;
+    }
+
      .crash-cymbal {
-        top: 70px;
-        left: 40px;
+        top: 22%;
+        left: 15%;
         width: 90PX;
       }
       
     .hihat-top-cymbal {
-        top: 80px;
-        right: 40px;
+        top: 30%;
+        right: 13%;
         width: 80px;
     }
       }
@@ -855,7 +860,7 @@ left: 46%;
           width: 90%;
           height: 100vh;
           flex-direction: column;
-          margin-top: 25%;
+          margin-top: 65%;
         }
          /*iconos de inicio*/
       
@@ -864,10 +869,10 @@ left: 46%;
            height: 80vh;
         }
         .main_box .box{
-          width: 120%;
+          width: 115%;
         }
         .circle{
-          width: 53%;
+          width: 55%;
           height: 75%;
         }
         .circle img{
@@ -884,13 +889,67 @@ left: 46%;
         .drum-box {
           width: 100%;
           box-shadow: none;
-         
          }
         .drum-kit {
           width: 70%;
           height: 80vh;
           display: block;
           margin: auto;
+        }
+        .square.kick {
+          top: 80%;
+          right: 46%;
+        }
+        .square.snare {
+          right: 30%;
+            top: 54%;
+         }
+        
+        .square.tom-high {
+          right: 40%;
+            top: 46%;
+         }
+        
+        .square.tom-mid {
+          left:39%;
+          top: 43%;
+         }
+        
+        .square.tom-low {
+          top: 65%;
+          left: 29%;
+         }
+        
+        .square.crash {
+          top: 16%;
+          left: 22%;
+         }
+        
+        .square.ride {
+          left: 33%;
+          top: 16%;
+        }
+        
+        .square.hihat-open {
+          right: 34%;
+          top: 27%;
+        }
+        
+        .square.hihat-close {
+          right: 20%;
+            top: 27%;
+        }
+    
+         .crash-cymbal {
+            top: 23%;
+            left: 26%;
+            width: 12%;
+          }
+          
+        .hihat-top-cymbal {
+            top: 30%;
+            right: 24%;
+            width: 13%;
         }
         } 
       
@@ -950,13 +1009,68 @@ left: 46%;
           }
           .drum-box {
             width: 100%;
-          }
+            box-shadow: none;
+           }
           .drum-kit {
             width: 70%;
             height: 100vh;
             display: block;
             margin: auto;
-           
+          }
+          .square.kick {
+            top: 80%;
+            right: 46%;
+          }
+          .square.snare {
+            right: 30%;
+              top: 54%;
+           }
+          
+          .square.tom-high {
+            right: 40%;
+              top: 46%;
+           }
+          
+          .square.tom-mid {
+            left:39%;
+            top: 43%;
+           }
+          
+          .square.tom-low {
+            top: 65%;
+            left: 29%;
+           }
+          
+          .square.crash {
+            top: 16%;
+            left: 22%;
+           }
+          
+          .square.ride {
+            left: 33%;
+            top: 16%;
+          }
+          
+          .square.hihat-open {
+            right: 34%;
+            top: 27%;
+          }
+          
+          .square.hihat-close {
+            right: 20%;
+              top: 27%;
+          }
+      
+           .crash-cymbal {
+              top: 23%;
+              left: 26%;
+              width: 12%;
+            }
+            
+          .hihat-top-cymbal {
+              top: 30%;
+              right: 24%;
+              width: 13%;
           }
           }
           @media screen and (min-width: 1280px) and (max-width: 1440px) {
