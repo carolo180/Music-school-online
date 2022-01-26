@@ -17,7 +17,7 @@ En los instrumentos se pueden tocar con el teclado y mause.
 
 
 <h2> PALETA DE COLORES: <h2>
-<img src="./img-readme/navegacion.jpg">
+<img src="./img-readme/navegacion.png">
 
 <h2> INSTRUMENTOS <h2>
 
@@ -32,15 +32,17 @@ En los instrumentos se pueden tocar con el teclado y mause.
 - Css
 
 <h2>INSTRUCCIONES<h2>
-Cada Instrumento musical contiene su respectivo html, una hoja de estilos, y un archivo javascript a travez de los cuales se encuentran enlazados.
+Cada Instrumento musical contiene su respectivo html, una hoja de estilos, y un archivo javascript que se encuentran elazados.
 
  <h3>Xilofono <h3>
+
 - xilofono.html
 - xilofostyle.css
 - xilofono.js
 
-Para el funcionamiento del proyecto se debe clonar el repositorio
-Para observar el despliegue del proyecto se debera obtener el link de GITHUB
+Para el funcionamiento del proyecto se debe clonar el repositorio.
+
+Para observar el despliegue del proyecto se debera obtener el link de GITHUB.
 
 
 
