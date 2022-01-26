@@ -206,42 +206,46 @@ h1{
 
    /*RESPONSIVE DISPOSITIVOS MOVILES Pagina piano*/
  @media only screen and (max-width: 769px) {
-    nav {
-      bottom: 0;
-      width: 100vw;
-      height: 5rem;
-      flex-direction: row;
-    }
-  
-    .logo {
-      display: none;
-    }
-  
-    .navbar_nav {
-      flex-direction: row;
-      width: 50%;
-      justify-content: space-around;
-    }
-  
-    .nav_link {
-      justify-content: center;
-    }
-    nav:hover{
-      width:100%;
-    }
-    nav:hover .link_text{
-      display:none;
-    }
-  
-    main {
-      margin: 0;
-    }
-      
-      iframe { 
-        width:80%;
-      
-  
-      }
+
+  nav {
+    bottom: 0;
+    width: 100vw;
+    height: 5rem;
+    flex-direction: row;
   }
-  
+  .logo {
+    display: none;
+  }
+  .navbar_nav {
+    flex-direction: row;
+    width: 45%;
+   justify-content: space-between;
+  }
+  .nav-item{
+    width: 10%;
+  }
+  .nav-item img{
+    width: 80%;
+    justify-content: space-between;
+  }
+  #second_list{
+    width: 37%;
+    justify-content: space-between;
+    display: flex;
+  }
+   main {
+    margin: 0;
+  }
+  .second_piano{
+      display: none;
+  }
+  nav:hover{
+    width: 100%;
+ }
+
+  nav:hover .link_text{
+ display: none;
+  }
+
+}
   
