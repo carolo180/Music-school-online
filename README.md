@@ -14,10 +14,11 @@ El usuario debe elegir el instrumento en la barra de navegacion para comenzar a 
 En los instrumentos se pueden tocar con el teclado y mause.
 
 <h2> BARRA DE NAVEGACION </h2>
-
-
-<h2> PALETA DE COLORES: <h2>
 <img src="./img-readme/navegacion.png">
+
+ 
+<h2> PALETA DE COLORES: <h2>
+<img src="./img-readme/paleta.jpg">
 
 <h2> INSTRUMENTOS <h2>
 
@@ -34,7 +35,7 @@ En los instrumentos se pueden tocar con el teclado y mause.
 <h2>INSTRUCCIONES<h2>
 Cada Instrumento musical contiene su respectivo html, una hoja de estilos, y un archivo javascript que se encuentran elazados.
 
- <h3>Xilofono <h3>
+ <h3>Xilofono </h3>
 
 - xilofono.html
 - xilofostyle.css
