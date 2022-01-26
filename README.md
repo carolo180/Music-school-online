@@ -34,7 +34,7 @@ Cuando elija tocar  cualquier instrumento con el teclado debe observar las tecla
 <h3> Bateria</h3>
 <img src="./img-readme/bateria.png" width="80%" height="60%">
 <h3>Flauta</h3>
-<img src="./img-readme/flauta.png" width="80%" height="30%">
+<img src="./img-readme/flauta.png" width="80%" height="20%">
 
 <h2>LA PÁGINA WEB FUE DESARROLLADA CON: </h2>
 
@@ -56,9 +56,12 @@ Para el funcionamiento del proyecto se debe clonar el repositorio.
 Para observar el despliegue se debera obtener el link de GitHub.
 
 <h2>RECURSOS</h2>
+
 - Figma
 - Jira
 - Youtube
+
+
 
 <h2>AUTORES</h2>
 
