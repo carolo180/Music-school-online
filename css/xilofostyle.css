@@ -33,97 +33,112 @@ html{
     width: 100% !important; 
  }
  /* Barra de navegación cerrada*/
-nav{
-    background-color: rgba(0, 10, 9, 0.575);
-    display: flex;
-    flex-direction: column;  /*Direccion de los elementos en columna*/
-    justify-content: space-between; /*Da espacio entre los elementos que habitan la nav*/
-    height: 100vh;
-    position: fixed;/*Hace estatita la nav*/
-    z-index: 900;/*La eleva un nivel*/
-    width: 10%;
-    transition: width 400ms ease;
-    }
-/* Encabezados de lista*/
-.navbar_nav{
-    list-style: none;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
-/* Cada item de lista*/
-.nav-item{
-    width: 100%;
-    display: flex;
-}
-/* Cada enlace de lista*/
-.nav_link{
-    display: flex;
-    align-items: center;
-    height: 5rem;
-    transition: var(--transition-speed)
-}
-/* hover de cada item*/
-.nav-item:hover{
-    background-color: rgba(224, 13, 179, 0.986);
-    font-size: 1.1rem;
- }
-/* iconos del nav*/
-.nav_link img{
-  margin: 0 1.5rem;
-}
-/* texto de cada item del nav*/
-.link_text{
-    display: none;
-    margin-left: 6rem;
-    overflow: hidden;
-    position: absolute;
-}
-/* Al pararse sobre el nav ocurre lo siguiente*/
-nav:hover{
-    width: 14rem;
- }
+ nav{
+  background-color: rgba(0, 10, 9, 0.575);
+  display: flex;
+  flex-direction: column; /*Direccion de los elementos en columna*/
+  justify-content: space-between; /*Da espacio entre los elementos que habitan la nav*/
+  height: 100vh;
+  position: fixed;/*Hace estatita la nav*/
+  z-index: 900;/*La eleva un nivel*/
+  width: 10%;
+  transition: width 300ms ease;
+  }
 
-nav:hover .link_text{
-    display: block;
-    color: white;
-    transition: block 300ms ease;
- }
- .logo{
-  font-weight: bold;
-  text-transform: uppercase;
-  margin-bottom: 1rem;
-  text-align: center;
-  color: var(--text-secondary);
-  background: var(--bg-secondary);
-  font-size: 1.5rem;
-  letter-spacing: 0.3ch;
+  /* Encabezados de lista*/
+  .navbar_nav{
+  list-style: none;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  }
+
+  /* Cada item de lista*/
+  .nav-item{
   width: 100%;
   display: flex;
- }
-.nav-logo{
+  }
+
+  /* Cada enlace de lista*/
+  .nav_link{
+  display: flex;
+  align-items: center;
+  height: 5rem;
+  transition: var(--transition-speed)
+  }
+
+  /* hover de cada item*/
+  .nav-item:hover{
+   box-shadow: 0 0 10px #de4be0, 0 0 35px #de4be0, 0 0 60px #de4be0, 0 0 210px #de4be0;
+   font-size: 1.1rem;
+  }
+
+  /* iconos del nav*/
+  .nav_link img{
+  margin: 0 1.5rem;
+  }
+
+  /* texto de cada item del nav*/
+  .link_text{
+  display: none;
+  margin-left: 6rem;
+  position: fixed;
+  }
+  
+  /* Al pararse sobre el nav ocurre lo siguiente*/
+  nav:hover{
+  width: 14rem;
+
+  }
+  
+  nav:hover .link_text{
+  display: block;
+  color: white;
+  }
+
+  .logo{
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: var(--text-secondary);
+    background: var(--bg-secondary);
+    font-size: 1.5rem;
+    letter-spacing: 0.2ch;
+    width: 100%;
+    display: flex;
+    }
+    .logo:hover{
+      text-shadow: 0 0 10px #ffffff, 0 0 35px #ffffff, 0 0 60px #de4be0, 0 0 210px #de4be0; ;
+    }
+
+  .nav-logo{
   display: flex;
   align-items: center;
   text-decoration: none;
-}
-.logo img{
+  width: 100%;
+  margin-left: 15%;
+  }
+
+  .logo img{
   transform: rotate(0deg);
   transition: var(--transition-speed);
-  margin-left: 1rem;
-}
- nav:hover .logo img{
+  }
+
+  nav:hover .logo img{
   transform: rotate(-540deg);
-}
-.logo_text{
-  display: none;
-  position: relative;
- margin-left: 2rem;
-}
-nav:hover .logo_text{
+  margin-left: 50%;
+  }
+
+  .logo_text{
+    display: none;
+    position: fixed;
+    left: 1%;
+   }
+
+  nav:hover .logo_text{
   display: block;
   color: white;
   transition: block 300ms ease;
-}
+ }
 /*titulo tabero principal*/
 
 h1{
@@ -141,13 +156,13 @@ h1{
     position: fixed;
     width: 110%;
     height: 100vh;
+    top: 0%;
   }
+
 #content{
     display: flex;
     justify-content: center;
 }
-
-
 
 #you_tube{
     display:none;
@@ -185,7 +200,7 @@ h1{
     justify-content:center;
   }
   .key:active{
-    background-color:gray;
+    background:gray;
   }
   
   .tipografy{
@@ -226,45 +241,52 @@ h1{
    }
 
 
-   /*RESPONSIVE DISPOSITIVOS MOVILES Pagina piano*/
- @media only screen and (max-width: 769px) {
-    nav {
-      bottom: 0;
-      width: 100vw;
-      height: 5rem;
-      flex-direction: row;
-  
-    }
-  
-    .logo {
-      display: none;
-    }
-  
-    .navbar_nav {
-      flex-direction: row;
-      width: 50%;
-      justify-content: space-around;
-    }
-  
-    .nav_link {
-      justify-content: center;
-    }
-    nav:hover{
-      width:100%;
-    }
-    nav:hover .link_text{
-      display:none;
-    }
-  
-    main {
-      margin: 0;
-    }
+   /*RESPONSIVE DISPOSITIVOS MOVILES Pagina xilofono*/
+   @media only screen and (max-width: 769px) {
+          nav {
+            bottom: 0;
+            width: 100vw;
+            height: 5rem;
+            flex-direction: row;
+          }
+          .logo {
+            display: none;
+          }
+          .navbar_nav {
+            flex-direction: row;
+            width: 45%;
+           justify-content: space-between;
+          }
+          .nav-item{
+            width: 10%;
+          }
+          .nav-item img{
+            width: 80%;
+            justify-content: space-between;
+          }
+          #second_list{
+            width: 40%;
+            justify-content: space-between;
+            display: flex;
+          }
+           main {
+            margin: 0;
+          }
+          .second_piano{
+              display: none;
+          }
+          nav:hover{
+            width: 100%;
+         }
       
-      iframe { 
-        width:80%;
-      
-  
-      }
-  }
+          nav:hover .link_text{
+         display: none;
+          }
+          .square.kick2 {
+            display: none;
+         }
+        
+        
+        }
   
   

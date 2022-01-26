@@ -32,97 +32,113 @@ html{
     width: 100% !important; 
  }
  /* Barra de navegación cerrada*/
-nav{
-    background-color: rgba(0, 10, 9, 0.575);
-    display: flex;
-    flex-direction: column;  /*Direccion de los elementos en columna*/
-    justify-content: space-between; /*Da espacio entre los elementos que habitan la nav*/
-    height: 100vh;
-    position: fixed;/*Hace estatita la nav*/
-    z-index: 900;/*La eleva un nivel*/
-    width: 10%;
-    transition: width 400ms ease;
-    }
-/* Encabezados de lista*/
-.navbar_nav{
-    list-style: none;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
-/* Cada item de lista*/
-.nav-item{
-    width: 100%;
-    display: flex;
-}
-/* Cada enlace de lista*/
-.nav_link{
-    display: flex;
-    align-items: center;
-    height: 5rem;
-    transition: var(--transition-speed)
-}
-/* hover de cada item*/
-.nav-item:hover{
-    background-color: rgba(224, 13, 179, 0.986);
-    font-size: 1.1rem;
- }
-/* iconos del nav*/
-.nav_link img{
-  margin: 0 1.5rem;
-}
-/* texto de cada item del nav*/
-.link_text{
-    display: none;
-    margin-left: 6rem;
-    overflow: hidden;
-    position: absolute;
-}
-/* Al pararse sobre el nav ocurre lo siguiente*/
-nav:hover{
-    width: 14rem;
- }
+ nav{
+  background-color: rgba(0, 10, 9, 0.575);
+  display: flex;
+  flex-direction: column; /*Direccion de los elementos en columna*/
+  justify-content: space-between; /*Da espacio entre los elementos que habitan la nav*/
+  height: 100vh;
+  position: fixed;/*Hace estatita la nav*/
+  z-index: 900;/*La eleva un nivel*/
+  width: 10%;
+  transition: width 300ms ease;
+  }
 
-nav:hover .link_text{
-    display: block;
-    color: white;
-    transition: block 300ms ease;
- }
- .logo{
+  /* Encabezados de lista*/
+  .navbar_nav{
+  list-style: none;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  }
+
+  /* Cada item de lista*/
+  .nav-item{
+  width: 100%;
+  display: flex;
+  }
+
+  /* Cada enlace de lista*/
+  .nav_link{
+  display: flex;
+  align-items: center;
+  height: 5rem;
+  transition: var(--transition-speed)
+  }
+
+  /* hover de cada item*/
+  .nav-item:hover{
+   box-shadow: 0 0 10px #de4be0, 0 0 35px #de4be0, 0 0 60px #de4be0, 0 0 210px #de4be0;
+   font-size: 1.1rem;
+  }
+
+  /* iconos del nav*/
+  .nav_link img{
+  margin: 0 1.5rem;
+  }
+
+  /* texto de cada item del nav*/
+  .link_text{
+  display: none;
+  margin-left: 6rem;
+  position: fixed;
+  }
+  
+  /* Al pararse sobre el nav ocurre lo siguiente*/
+  nav:hover{
+  width: 14rem;
+
+  }
+  
+  nav:hover .link_text{
+  display: block;
+  color: white;
+  }
+
+  .logo{
   font-weight: bold;
-  text-transform: uppercase;
   margin-bottom: 1rem;
-  text-align: center;
   color: var(--text-secondary);
   background: var(--bg-secondary);
   font-size: 1.5rem;
-  letter-spacing: 0.3ch;
+  letter-spacing: 0.2ch;
   width: 100%;
   display: flex;
- }
-.nav-logo{
+  }
+  .logo:hover{
+    text-shadow: 0 0 10px #ffffff, 0 0 35px #ffffff, 0 0 60px #de4be0, 0 0 210px #de4be0; ;
+  }
+
+  .nav-logo{
   display: flex;
   align-items: center;
   text-decoration: none;
-}
-.logo img{
+  width: 100%;
+  margin-left: 15%;
+  }
+
+  .logo img{
   transform: rotate(0deg);
   transition: var(--transition-speed);
-  margin-left: 1rem;
-}
- nav:hover .logo img{
+  }
+
+  nav:hover .logo img{
   transform: rotate(-540deg);
-}
-.logo_text{
+  margin-left: 50%;
+  }
+
+  .logo_text{
   display: none;
-  position: relative;
- margin-left: 2rem;
-}
-nav:hover .logo_text{
+  position: fixed;
+  left: 1%;
+  }
+   
+  nav:hover .logo_text{
   display: block;
   color: white;
   transition: block 300ms ease;
-}
+ }
+
 /*titulo tabero principal*/
 
 h1{
@@ -146,7 +162,6 @@ h1{
     justify-content: center;
 }
 
-
 #you_tube{
     display:none;
     justify-content:center;
@@ -158,170 +173,98 @@ h1{
     width:560px;
      height:315px;
   }
-  :root {
-    --strip-color: #f58b00;
-    --flute-color: #d6db72;
-  }
+
   /*flauta */
-  .flute {
-    height: 100px;
-    background-color: var(--flute-color);
-    width: 50%;
-    border-radius: 30px/80px;
-    display: flex;
-    align-items: center;
-    position: relative;
+  .cont-flute {
+    width:100%;
+    height:80vh;
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content:center;
 
   }
-  .flaute::after {
-    position: absolute;
-    right: 0;
-    border-radius: 30px/80px;
-    height: 92px;
-    width: 40px;
-    background-color: red;
-    content: "";
-    margin-left: 40px;
-    margin-right: 2px;
-   background: rgb(37,38,16);
-   background: linear-gradient(81deg, rgba(37,38,16,1) 0%, rgba(84,87,36,1) 100%);
-  }
-  .strip {
-    height: 100%;
-    width: 80px;
-    border-radius: 30px/80px;
-    background-color: black;
-    position: relative;
-    margin-right: 10px;
+
+  .flute{  
+    width:5%;
+    height:80%;
+    background:#266aff;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:space-between;
+    border-radius: 25% 25%;
     
   }
-
-  .strip::after {
-    display: inline-block;
-    vertical-align: middle;
-    border-radius: 30px/80px;
-    height: 100px;
-    width: 50px;
-    background-color: red;
-    content: "";
-    margin-right: -15px;
-    float: right;
-    background-color: var(--flute-color);
-  
-  }
-  .strip.second {
-    background-color: var(--strip-color);
-
-  }
-  .strip.large {
-    width: 200px;
+  .square{
+    margin-top:2%;
+    width:20%;
+    height:5%;
+    background:#ffffff;
   }
 
-  
-  .group {
-    display: flex;
-    align-items: center;
-  }
-    .group.first {
-        margin-left: 10px;
-      }
-      .group.second {
-        margin-left: auto;
-      }
+  .hole{ 
+    width:20%;
+    height:10%;
+    background:#b23eeb;
+    border-radius:50%;
 
-      .group.third {
-        margin-right: 5px;
-    
-      }
-      .group.thrid.hole{
-            margin-left: -30px;
-            margin-right: 10px;
-      }
-  
-    .group.strip + .strip {
-      margin-left: -30px;
-    }
-
-    .group.holes {
-      display: flex;
-      justify-content: space-between;
-    }
-
-    .group.hole { 
-    margin-left: -30px;
-    margin-right: 30px;
-    }
-
-  .group.hole:first-child(1) {
-    margin-left: -30px;
-    margin-right: 30px;
   }
-  .group.hole:nth-child(2) {
-    margin-right: 30px;
-  }
-  .group.holes:nth-child(3) {
-    margin-right: 50px;
-  }
-  .group.holes:nth-child(4) {
-    margin-right: 20px;
-  }
-  .group.holes:nth-child(5) {
-    margin-right: 50px;
-  }
-  .group.holes:last-child {
-    margin-right: 20px;
-  }
-  
-  .hole {
-    height: 40px;
-    width: 40px;
-    border-radius: 50%;
-    background-color: #22240f;
-    z-index: 10;
-    border-left: 2px solid #545724;
-    border-top: 2px solid #545724;
+  .hole:active{
+    background:#ffffff;
   }
 
+  .strip{
+    width:98%;
+    height:2%;
+    background: white;
+  }
 
    /*RESPONSIVE DISPOSITIVOS MOVILES Pagina piano*/
- @media only screen and (max-width: 769px) {
+   @media only screen and (max-width: 769px) {
     nav {
       bottom: 0;
       width: 100vw;
       height: 5rem;
       flex-direction: row;
-  
     }
-  
     .logo {
       display: none;
     }
-  
     .navbar_nav {
       flex-direction: row;
-      width: 50%;
-      justify-content: space-around;
+      width: 45%;
+     justify-content: space-between;
     }
-  
-    .nav_link {
-      justify-content: center;
+    .nav-item{
+      width: 10%;
     }
-    nav:hover{
-      width:100%;
+    .nav-item img{
+      width: 80%;
+      justify-content: space-between;
     }
-    nav:hover .link_text{
-      display:none;
+    #second_list{
+      width: 40%;
+      justify-content: space-between;
+      display: flex;
     }
-  
-    main {
+     main {
       margin: 0;
     }
-      
-      iframe { 
-        width:80%;
-      
+    .second_piano{
+        display: none;
+    }
+    nav:hover{
+      width: 100%;
+   }
+
+    nav:hover .link_text{
+   display: none;
+    }
+    .square.kick2 {
+      display: none;
+   }
   
-      }
+  
   }
-  
   
