@@ -21,8 +21,7 @@ Cuando elija tocar  cualquier instrumento con el teclado debe observar las tecla
 <img src="./img-readme/barra-navegacion.png">
 
 <h2> BARRA DE NAVEGACIÓN DESPLEGABLE Y ANIMADA</h2>
-<img src="./img-readme/barra-desplegable.png">
-
+<img src="./img-readme/barra-desplegable (1).png">
  
 <h2> PALETA DE COLORES: </h2>
 <img src="./img-readme/paleta.jpg">
@@ -35,9 +34,9 @@ Cuando elija tocar  cualquier instrumento con el teclado debe observar las tecla
 <h3> Bateria</h3>
 <img src="./img-readme/bateria.png" width="80%" height="60%">
 <h3>Flauta</h3>
-<img src="./img-readme/flauta.png" width="80%" height="40%">
+<img src="./img-readme/flauta.png" width="80%" height="30%">
 
-<h2>LA PAGINA WEB FUE DESARROLLADA CON </h2>
+<h2>LA PÁGINA WEB FUE DESARROLLADA CON: </h2>
 
 - Javascript
 - Html
