@@ -24,7 +24,7 @@ Cuando elija tocar  cualquier instrumento con el teclado debe observar las tecla
 <img src="./img-readme/barra-desplegable (1).png">
  
 <h2> PALETA DE COLORES: </h2>
-<img src="./img-readme/paleta.jpg">
+<img src="./img-readme/paleta.jpg" width="80%" height="60%">
 
 <h2> INSTRUMENTOS </h2>
 <h3> Piano</h3>
