@@ -63,8 +63,9 @@ Para observar el despliegue se debera obtener el link de GitHub.
 
 <h2>AUTORES</h2>
 
-Carolina Loaiza
-Doraly Santander 
+Carolina Loaiza.
+
+Doraly Santander. 
 
 
 
