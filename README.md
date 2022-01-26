@@ -2,7 +2,9 @@
 <h1>ESCUELA DE MUSICA EN LINEA</h1>
  <img src="./img-readme/logo.png" width="100%">
 
-<h2>DESCRIPCIÓN <h2>
+
+
+<h2>DESCRIPCIÓN </h2>
 Se ha desarrollado una página web con instrumentos musicales virtuales que son:
 
 - Piano
@@ -16,6 +18,8 @@ El usuario debe elegir el instrumento en la barra de navegación para comenzar a
 Los instrumentos se pueden tocar con el teclado y mouse.
 Cuando elija tocar  cualquier instrumento con el teclado debe observar las teclas que aparecen en cada nota de cada instrumento para luego presionarlas.
 
+<h2>PANTALLA DE INICIO</h2>
+<img src="./img-readme/pantalla-inicio.png" width="80%" height="60%">
 
 <h2> BARRA DE NAVEGACIÓN </h2>
 <img src="./img-readme/barra-navegacion.png">
