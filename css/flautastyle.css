@@ -188,12 +188,13 @@ h1{
   .flute{  
     width:5%;
     height:80%;
-    background:#266aff;
+    background:rgba(255, 217, 248, 0.336);
     display:flex;
     flex-direction:column;
     align-items:center;
     justify-content:space-between;
     border-radius: 25% 25%;
+    border: 2PX SOLID #4bbde0;
     
   }
   .square{
@@ -206,7 +207,7 @@ h1{
   .hole{ 
     width:20%;
     height:10%;
-    background:#b23eeb;
+    background:#161516;
     border-radius:50%;
 
   }
@@ -217,7 +218,7 @@ h1{
   .strip{
     width:98%;
     height:2%;
-    background: white;
+    background: #4bbde0;
   }
 
    /*RESPONSIVE DISPOSITIVOS MOVILES Pagina piano*/
@@ -268,7 +269,22 @@ h1{
     width: 80%;
    margin-left: -10%;
   }
-  
-  
+  .cont-flute {
+    justify-content:flex-start;
   }
+  .flute{  
+    width:15%;
+    height:70%;
+   }
+ }
+
+ @media screen and (min-width: 768px) and (max-width: 1000px) {
+  .cont-flute {
+    justify-content:center;
+  }
+  .flute{  
+    width:10%;
+    height:70%;
+   }
+   }
   
