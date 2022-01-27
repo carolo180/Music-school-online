@@ -586,7 +586,7 @@ left: 46%;
     .set {
       height:28vh;
       width:80%;
-      margin:50% 3em 10em 1em;
+      margin:30% 3em 10em 1em;
       padding: 1em 1em 1em 1em;
     }
     .set  .white {
@@ -602,8 +602,11 @@ left: 46%;
       width: 90%;
       height: 60%;
       flex-direction: column;
-      margin-top: 150%;
+      margin-top: 120%;
     }
+    #board h2{
+       font-size: 1.7rem;
+     }
      /*iconos de inicio*/
   
     .main_box{
@@ -626,7 +629,7 @@ left: 46%;
     }
     .drum-box {
       width: 100%;
-     margin-top: 45%;
+     margin-top: 40%;
      }
     .drum-kit {
       width: 100%;

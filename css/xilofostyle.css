@@ -280,18 +280,36 @@ h1{
       width: 100%;
    }
 
-          nav:hover .link_text{
+   nav:hover .link_text{
       display: none;
-        }
-          .square.kick2 {
-            display: none;
-         }
-         iframe{
-          width: 80%;
-         margin-left: -10%;
-        }
-        
-        
-        }
+    }
+   .square.kick2 {
+     display: none;
+    }
+   iframe{
+     width: 80%;
+    margin-left: -10%;
+   }
+   .key{
+    width:30%;
+    height:98%;
+    border-radius:20px;
+    display:inline-block;
+    cursor:pointer;
+    margin-left: 2%;
+    }
+
+    .cont-xilofon {
+        width:70%;
+        height:60%;
+        margin: 5% auto;
+    }
+    .tipografy{
+      font-family: dosis;
+      font-size: 1em;
+      padding-top: 10%;
+      text-align: center;
+    }
+    }
   
   
