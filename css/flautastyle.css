@@ -264,6 +264,10 @@ h1{
     .square.kick2 {
       display: none;
    }
+   iframe{
+    width: 80%;
+   margin-left: -10%;
+  }
   
   
   }

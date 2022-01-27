@@ -97,18 +97,18 @@ html{
   }
 
   .logo{
-    font-weight: bold;
-    margin-bottom: 1rem;
-    color: var(--text-secondary);
-    background: var(--bg-secondary);
-    font-size: 1.5rem;
-    letter-spacing: 0.2ch;
-    width: 100%;
-    display: flex;
-    }
-    .logo:hover{
-      text-shadow: 0 0 10px #ffffff, 0 0 35px #ffffff, 0 0 60px #de4be0, 0 0 210px #de4be0; ;
-    }
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: var(--text-secondary);
+  background: var(--bg-secondary);
+  font-size: 1.5rem;
+  letter-spacing: 0.2ch;
+  width: 100%;
+  display: flex;
+  }
+  .logo:hover{
+    text-shadow: 0 0 10px #ffffff, 0 0 35px #ffffff, 0 0 60px #de4be0, 0 0 210px #de4be0; ;
+  }
 
   .nav-logo{
   display: flex;
@@ -129,16 +129,17 @@ html{
   }
 
   .logo_text{
-    display: none;
-    position: fixed;
-    left: 1%;
-   }
-
+  display: none;
+  position: fixed;
+  left: 1%;
+  }
+   
   nav:hover .logo_text{
   display: block;
   color: white;
   transition: block 300ms ease;
  }
+
 /*titulo tabero principal*/
 
 h1{
@@ -243,48 +244,52 @@ h1{
 
    /*RESPONSIVE DISPOSITIVOS MOVILES Pagina xilofono*/
    @media only screen and (max-width: 769px) {
-          nav {
-            bottom: 0;
-            width: 100vw;
-            height: 5rem;
-            flex-direction: row;
-          }
-          .logo {
-            display: none;
-          }
-          .navbar_nav {
-            flex-direction: row;
-            width: 45%;
-           justify-content: space-between;
-          }
-          .nav-item{
-            width: 10%;
-          }
-          .nav-item img{
-            width: 80%;
-            justify-content: space-between;
-          }
-          #second_list{
-            width: 40%;
-            justify-content: space-between;
-            display: flex;
-          }
-           main {
-            margin: 0;
-          }
-          .second_piano{
-              display: none;
-          }
-          nav:hover{
-            width: 100%;
-         }
-      
+    nav {
+      bottom: 0;
+      width: 100vw;
+      height: 5rem;
+      flex-direction: row;
+    }
+    .logo {
+      display: none;
+    }
+    .navbar_nav {
+      flex-direction: row;
+      width: 45%;
+     justify-content: space-between;
+    }
+    .nav-item{
+      width: 10%;
+    }
+    .nav-item img{
+      width: 80%;
+      justify-content: space-between;
+    }
+    #second_list{
+      width: 40%;
+      justify-content: space-between;
+      display: flex;
+    }
+     main {
+      margin: 0;
+    }
+    .second_piano{
+        display: none;
+    }
+    nav:hover{
+      width: 100%;
+   }
+
           nav:hover .link_text{
-         display: none;
-          }
+      display: none;
+        }
           .square.kick2 {
             display: none;
          }
+         iframe{
+          width: 80%;
+         margin-left: -10%;
+        }
         
         
         }
