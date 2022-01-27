@@ -188,7 +188,7 @@ h1{
   .flute{  
     width:5%;
     height:80%;
-    background: linear-gradient(#02254d91, #c1417b);
+    background: #c427bc59;
     display:flex;
     flex-direction:column;
     align-items:center;
@@ -218,7 +218,7 @@ h1{
   .strip{
     width:98%;
     height:2%;
-    background: #1f5f72;
+    background: #34c7c0;
   }
 
    /*RESPONSIVE DISPOSITIVOS MOVILES Pagina piano*/
