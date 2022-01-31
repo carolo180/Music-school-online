@@ -1,7 +1,8 @@
-const playingClass = 'playing';
-crashRide = document.getElementById('crash-ride');
-hitHatTop = document.getElementById('hihat-top');
+const playingClass = 'playing';  /*Clase active de los elementos*/
+crashRide = document.getElementById('crash-ride');/*Platos derecha*/
+hitHatTop = document.getElementById('hihat-top');/*Platos izquierda*/
 
+/*Funciones de animacion de los platos*/
 const animateCrashOrRide = () => {
     crashRide.style.transform = 'rotate(20deg) scale(1.5)';
 };
@@ -10,13 +11,30 @@ const animateHitHatClosed = () => {
     hitHatTop.style.top = '200px';
 };
 
-const playSound = e => {
-    const keyCode = e.keyCode;
-    keyElement = document.querySelector(`div[data-note="${keyCode}"]`);/*Trae las squares*/
-    if(!keyElement) return;
+/*Funciones de remover la animacion de los platos*/
+const removeCrashRideTransition = e => {
+        e.target.style.transform = 'rotate(-7.3deg) scale(1.5)';
+        /*e.target es una referencia al objeto en el cual se lanzo el evento. */
+}
 
+const removeHitHatTopTransition = e => {
+       e.target.style.top = '165px';
+        /*e.target es una referencia al objeto en el cual se lanzo el evento. */
+}
+
+const removeKeyTransition = e => {
+      e.target.classList.remove(playingClass);
+       /*me trae todas las clases y remueve la clase playing*/
+}
+
+/*Funciones de reproduccion del audio con teclado*/
+
+const playSound = e => {
+    const keyCode = e.keyCode;/* devuelve el valor de la tecla que se presiona y lo deposita en una variable*/
+    keyElement = document.querySelector(`div[data-note="${keyCode}"]`);/*Trae los parametros de referencia del html*/
+  
     const audioElement = document.querySelector(`audio[data-note="${keyCode}"]`); /*Trae los audios*/
-    audioElement.currentTime = 0;
+    audioElement.currentTime = 0; /*cuando iniciara el audio */
     audioElement.play();
 
    /*Animacion de los platos*/
@@ -33,39 +51,29 @@ const playSound = e => {
 
     keyElement.classList.add(playingClass);
 }
+window.addEventListener('keydown', playSound);
 
-const removeCrashRideTransition = e => {
-    if(e.propertyName !== 'transform')  return;
 
-    e.target.style.transform = 'rotate(-7.3deg) scale(1.5)';
-}
 
-const removeHitHatTopTransition = e => {
-    if(e.propertyName !== 'top')  return;
 
-    e.target.style.top = '165px';
-}
-
-const removeKeyTransition = e => {
-    if(e.propertyName !== 'transform')  return;
-
-    e.target.classList.remove(playingClass);
-}
+/*Evento de cortar animacion con teclado de los elementos*/ 
 
 const drumKeys = Array.from(document.querySelectorAll('.square'));
 
 drumKeys.forEach(key => {
+  /*El evento transitionend es lanzado cuando una transición CSS se ha completado. */
     key.addEventListener('transitionend', removeKeyTransition);
 })
 
+/*Eventos de remover la animacion de los platos*/
 crashRide.addEventListener('transitionend', removeCrashRideTransition);
 hitHatTop.addEventListener('transitionend', removeHitHatTopTransition);
 
-window.addEventListener('keydown', playSound);  
+  
 
 
 
-
+/*Evento con click*/
 
 drumKeys.forEach(square => {
   square.addEventListener('click', () => playNote(square))
